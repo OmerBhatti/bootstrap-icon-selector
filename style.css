@@ -1,0 +1,49 @@
+.icon_picker .picker_dialog {
+  box-shadow: 0px 0px 10px 0px #cecece;
+  background-color: white;
+  z-index: 10000 !important;
+  width: 295px;
+  height: 250px;
+  margin: 5px 0px;
+  border-radius: 4px;
+  padding: 5px;
+  position: absolute;
+  padding-bottom: 40px;
+}
+
+.icon_picker .icon_option {
+  border: 1px solid #cecece;
+  border-radius: 2px;
+  color: rgb(36, 36, 36);
+  background-color: white;
+  height: 30px;
+  width: 30px;
+  margin: 5px;
+  transition: all 0.25s ease;
+}
+
+.icon_picker .icon_option:hover {
+  border: 1px solid #ececec;
+  background-color: #f4f4f4;
+  transition: all 0.25s ease;
+}
+
+.icon_picker .icon_container {
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  height: inherit;
+  align-content: baseline;
+}
+
+.icon_picker .icon_option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon_picker .search_field {
+  width: 100%;
+  padding: 3px 5px;
+  border: 1px solid #cecece;
+}
