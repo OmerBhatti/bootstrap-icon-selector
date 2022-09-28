@@ -1,6 +1,6 @@
 {
   "name": "bootstrap-icon-selector",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A Simple Icon Picker using Bootstrap-icons to return bootstrap icon class like \"bi bi-icon-name\"",
   "main": "index.jsx",
   "scripts": {
@@ -21,6 +21,7 @@
     "react-bootstrap-icon-picker"
   ],
   "author": "M. Omer Bhatti",
+  "repository": "github:OmerBhatti/bootstrap-icon-selector",
   "license": "ISC",
   "dependencies": {
     "bootstrap-icons": "^1.9.1"
