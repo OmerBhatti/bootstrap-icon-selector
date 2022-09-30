@@ -1,6 +1,6 @@
 {
   "name": "bootstrap-icon-selector",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "description": "A Simple Icon Picker using Bootstrap-icons to return bootstrap icon class like \"bi bi-icon-name\"",
   "main": "index.jsx",
   "scripts": {

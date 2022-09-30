@@ -1,5 +1,4 @@
-import "bootstrap-icons/font/bootstrap-icons.css";
-import { useEffect, useRef, useState } from "react";
+import React, { useState } from "react";
 import iconNames from "./icons";
 import "./style.css";
 
@@ -8,17 +7,6 @@ export default function BootstrapIconPicker({ onChange, buttonClass }) {
   const [isOpen, setIsOpen] = useState(false);
   const [currentIcon, setCurrentIcon] = useState(icon);
   const [allIcons, setAllIcons] = useState(iconNames);
-  const field = useRef();
-
-  useEffect(() => {
-    onChange(`bi bi-${currentIcon}`);
-  }, []);
-
-  useEffect(() => {
-    if (field.current) {
-      field.current.focus();
-    }
-  }, [isOpen]);
 
   const searchIcons = (e) => {
     const value = e.target.value;
@@ -66,7 +54,7 @@ export default function BootstrapIconPicker({ onChange, buttonClass }) {
                 onClick={() => {
                   close();
                   setIcon(iconName);
-                  onChange("bi bi-" + iconName);
+                  onChange(iconName);
                 }}
                 onMouseEnter={() => {
                   setCurrentIcon(iconName);
@@ -77,11 +65,9 @@ export default function BootstrapIconPicker({ onChange, buttonClass }) {
                 <i className={`bi bi-${iconName}`}></i>
               </div>
             ))}
-            {allIcons.length == 0 && <div>No icons found.</div>}
           </div>
           <div style={{ margin: 5 }}>
             <input
-              ref={field}
               type="search"
               className="search_field"
               placeholder={currentIcon}

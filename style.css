@@ -4,9 +4,9 @@
   z-index: 10000 !important;
   width: 295px;
   height: 250px;
-  margin: 5px 0px;
+  margin: 10px 0px;
   border-radius: 4px;
-  padding: 5px;
+  padding: 10px;
   position: absolute;
   padding-bottom: 40px;
 }
@@ -33,7 +33,6 @@
   flex-wrap: wrap;
   overflow-y: scroll;
   height: inherit;
-  align-content: baseline;
 }
 
 .icon_picker .icon_option {
