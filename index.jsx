@@ -1,3 +1,4 @@
+import "bootstrap-icons/font/bootstrap-icons.css";
 import React, { useState } from "react";
 import iconNames from "./icons";
 import "./style.css";
