@@ -1,7 +1,6 @@
 ![Sample Image](asset/Sample.png)
 
 ### Usage
-
 ```js
 import IconPicker from "bootstrap-icon-selector";
 import { useState } from "react";
@@ -20,7 +19,6 @@ export default App;
 ```
 
 ### Props
-
 ```javascript
 onChange function
 buttonClass string
